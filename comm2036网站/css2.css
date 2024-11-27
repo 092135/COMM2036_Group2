@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('cox442721_a_dramatic_scene_of_a_SpaceX_rocket_launch_with_a_lar_a33788ff-ab1e-47a5-920c-a76115b61af4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.introduction {
+    position: fixed;
+    top: 20px; /* 距离顶部 */
+    left: 20px; /* 距离左侧 */
+    background-color: rgba(128, 128, 128, 0.5); /* 灰色透明背景 */
+    color: white; /* 白色文字 */
+    font-weight: bold; /* 粗体 */
+    padding: 10px 15px; /* 内边距 */
+    border-radius: 5px; /* 圆角 */
+    z-index: 10; /* 确保在其他元素上方 */
+}
+
+.header {
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
+    padding: 20px 0;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.transparent-box {
+    background-color: rgba(0, 0, 0, 0.5); /* 黑色透明背景 */
+    border-radius: 10px; /* 圆角边框 */
+    padding: 20px; /* 内边距 */
+    max-width: 800px; /* 最大宽度 */
+    margin: -20px auto; /* 调整上边距，使其更靠近标题 */
+}
+
+.mission-statement {
+    font-size: 22px; /* 字体大小 */
+    color: white; /* 字体颜色 */
+    text-align: left; /* 左对齐 */
+    margin: 0; /* 确保没有额外的外边距 */
+}
+
+.content-wrapper {
+    display: flex; /* 使用flex布局 */
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px; /* 调整外边距 */
+    position: relative;
+    z-index: 1;
+    width: 90%; /* 让content-wrapper占据整个页面宽度 */
+}
+
+.content-left {
+    flex: 1; /* 左侧内容占据可用空间 */
+    padding: 20px;
+}
+
+.content-right {
+    flex: 1; /* 右侧内容占据可用空间 */
+    padding: 20px; /* 添加内边距 */
+}
+
+.content-right video {
+    width: 100%; /* 让视频元素填充整个容器宽度 */
+    height: auto; /* 自动调整高度以保持宽高比 */
+}
+
+.timeline {
+    position: fixed;
+    max-width: 800px;
+    margin: 40px auto; /* 调整顶部外边距 */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+    border-radius: 10px; /* 圆角边框 */
+    z-index: 20; /* 确保在其他元素上方 */
+}
+
+
+.timeline-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row-reverse; /* 奇数项反向排列 */
+}
+
+.timeline-item-content {
+    width: 50%;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item-image {
+    width: 50%;
+    text-align: center;
+}
+
+.timeline-item-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background-color: #333;
+    transform: translateX(-50%);
+}
+
+.timeline-label {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+}
